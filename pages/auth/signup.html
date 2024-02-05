@@ -22,13 +22,22 @@
         <div class="mb-3">
           <label for="passwordInput" class="form-label">Mot de passe</label>
           <input type="password" class="form-control" id="passwordInput">
+          <div class="invalid-feedback">
+            Le mot de passe n'est pas assez robuste : Au moins 8 caratères, cpmprenant au moins 1 majuscule, 1 minuscule, 1 chiffre et 1 caratère spéciale. 
+          </div>
+          <div class="valid-feedback">
+            Le mot de passe est assez robuste!
+          </div>
         </div>
         <div class="mb-3">
             <label for="valaditionPasswordInput" class="form-label">Validez votre mot de passe</label>
             <input type="password" class="form-control" id="valaditionPasswordInput">
+             <div class="invalid-feedback">
+            le mot de passe n'est pas le même 
+          </div>
           </div>
         <div class="text-center">
-            <button type="submit" class="btn btn-primary ">Inscription</button>
+            <button type="submit" class="btn btn-primary " id="btn-validation-inscription">Inscription</button>
         </div>
     </form>
     <div class="text-center pt-3">

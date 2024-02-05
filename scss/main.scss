@@ -24,6 +24,7 @@ footer.footer{
 
 .hero-scene{
     position: relative;
+    margin-bottom: 15px;
     &::before{
         content: "";
         position: absolute;
@@ -74,4 +75,7 @@ footer.footer{
         transition: all 0.3s;
 
     }
+}
+.form-label{
+    color: $primary;
 }

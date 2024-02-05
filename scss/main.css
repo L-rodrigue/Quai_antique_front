@@ -11983,7 +11983,7 @@ html {
 }
 
 main {
-  margin-bottom: 250px;
+  margin-bottom: 270px;
 }
 
 p {
@@ -12032,7 +12032,8 @@ footer.footer {
 .image-card {
   position: relative;
 }
-.image-card:hover .titre-image {
+.image-card:hover .titre-image,
+.image-card:hover .action-image-buttons {
   opacity: 1;
 }
 .image-card:hover img {
@@ -12046,6 +12047,17 @@ footer.footer {
   top: 50%;
   left: 50%;
   transform: -50%, -50%;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.image-card .action-image-buttons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
   opacity: 0;
   transition: all 0.3s;
 }
